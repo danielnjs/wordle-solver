@@ -2,6 +2,18 @@
 
 A standalone, browser-based Wordle helper that filters five-letter words using your clues and recommends informative next guesses. The interface, solver, and dictionaries are bundled into one HTML file.
 
+## Completely offline edition
+
+Open [wordle-solver-offline.html](./wordle-solver-offline.html) directly in your browser. You can copy this single file to another computer or a USB drive; it needs no installation, local server, or first online visit.
+
+- Both dictionaries, all styles, the application code, and the icon are embedded.
+- External links are replaced by plain-text source references.
+- A Content Security Policy blocks network connections and external resources while allowing embedded scripts, styles, and the data-URL icon.
+- The optional WebMCP integration is removed.
+- Solver features and rankings are unchanged. Puzzle state remains in memory and resets on reload.
+
+The original HTML also performs calculations offline; this separate edition explicitly disables outbound resources and removes online navigation. Browser extensions and browser-owned services are outside the HTML file's control.
+
 ## Quick start
 
 1. Open [wordle-solver.html](./wordle-solver.html) in a modern browser with JavaScript enabled.
