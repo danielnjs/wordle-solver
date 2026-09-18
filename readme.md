@@ -232,15 +232,3 @@ The offline file contains the page markup, responsive CSS, embedded JSON diction
 `addGuess()` requires exactly five cleaned letters, permits at most six history entries, and rejects an identical word/pattern pair already recorded. It does not require the entered guess to exist in either embedded dictionary. Typing a different guess preserves the current tile colors; selecting a suggestion resets them to absent, so check all five colors before adding feedback.
 
 `solve()` explicitly warns when a directly excluded letter is also directly required. Other contradictions, including incompatible history entries, can simply produce zero matches rather than a specific conflict explanation.
-
-### Checks performed for this README update
-
-The JavaScript extracted from the supplied offline HTML was parsed and its core functions executed in Node.js to verify:
-
-- Embedded dictionary sizes: 2,315 classic answers and 14,855 extended words.
-- Repeated-letter example: ALLEE against APPLE produces `21002`.
-- Classic worked example: CRANE leaves 16 candidates, then SLOTH leaves only PLANT.
-- Single-candidate ranking: zero information bits and one expected remaining answer.
-- Ranking threshold: all 150 candidates are scored at N = 150; only 80 are scored at N = 151.
-
-These checks verify the documented core behavior; they are not a full browser interaction or accessibility test.
