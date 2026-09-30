@@ -2,11 +2,26 @@
 
 A standalone, browser-based Wordle helper that filters five-letter words using your clues and recommends informative next guesses. The interface, solver, and dictionaries are bundled into one HTML file.
 
+## Live demo
+
+Try Wordwise directly in your browser:
+
+https://danielnjs.github.io/wordle-solver/
+
 ## Quick start
 
-1. Open [wordle-solver-offline.html](./wordle-solver-offline.html) in a modern browser with JavaScript enabled.
+### Online
+
+1. Open the deployed Wordwise solver.
 2. Enter known letters or record the feedback from a guess you played.
 3. Choose a matching word, play it in Wordle, and add the new feedback.
+
+### Run locally
+
+1. Clone or download this repository.
+2. Open [index.html](./index.html) in a modern browser with JavaScript enabled.
+3. Enter known letters or record the feedback from a guess you played.
+4. Choose a matching word, play it in Wordle, and add the new feedback.
 
 No installation, build step, account, internet connection, or web server is required for the solver. The help dialog displays dictionary-source URLs as plain text; visiting those sources separately requires internet access.
 
